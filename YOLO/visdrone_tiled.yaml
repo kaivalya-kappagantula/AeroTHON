@@ -1,0 +1,9 @@
+path: C:/Users/kaiva/Projects/Aerothon/VisDrone_YOLO_TILED
+
+train: images/train
+val: images/val
+
+names:
+  0: person
+  1: automobile
+  2: cycle
