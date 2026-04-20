@@ -37,7 +37,8 @@ def draw_alignment(frame, center, frame_cx, frame_cy):
                     cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0,255,0), 2)
 
 def run():
-    cap = cv2.VideoCapture(0)
+    from pi_camera import PiCamera
+    cap = PiCamera()
     if not cap.isOpened():
         print("Could not open camera")
         return
