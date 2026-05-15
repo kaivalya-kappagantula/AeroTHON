@@ -2,6 +2,10 @@ import cv2
 from picamera2 import Picamera2
 
 class PiCamera:
+    """
+    Drop-in replacement for cv2.VideoCapture for RPi Camera Module 3.
+    Downward-facing, fixed resolution.
+    """
     def __init__(self, width=640, height=480):
         self.picam2 = Picamera2()
         self.picam2.configure(
